@@ -134,7 +134,7 @@ development:
 test:
   clients:
     default:
-      database: lock_test
+      database: project_box_test
       hosts:
         - localhost:27017
       options:
