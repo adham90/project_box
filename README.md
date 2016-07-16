@@ -1,24 +1,25 @@
-# README
+# ProjectBox [![Build Status](https://travis-ci.org/adham90/project_box.svg?branch=master)](https://travis-ci.org/adham90/project_box)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+TODO: Write description
 
-* Ruby version
+# Setup the environment
 
-* System dependencies
+This application requires:
 
-* Configuration
+- Ruby [2.2.\*, 2.3.*]
+- Rails 5.0.0
+- Mongodb
 
-* Database creation
+**Using RVM**
 
-* Database initialization
+If you're using RVM then you might want to run
 
-* How to run the test suite
+> $ rvm use --create --ruby-version 2.3.1@project_box
 
-* Services (job queues, cache servers, search engines, etc.)
+### Run test.
 
-* Deployment instructions
+> $ rspec
 
-* ...
+## License
+All Rights Reserved.
