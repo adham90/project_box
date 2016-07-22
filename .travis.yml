@@ -9,4 +9,5 @@ services:
 bundler_args: --without development
 
 script:
+  - bundle exec rubocop
   - bundle exec rspec

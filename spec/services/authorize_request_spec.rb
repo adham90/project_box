@@ -2,11 +2,11 @@ require 'rails_helper'
 
 describe AuthorizeRequest do
   let!(:user) { create :user }
-  let(:valid_token) { { 'uid' => user.email, 'Authorization' => user.token } }
-  let(:invalid_token) { { 'uid' => 'invalid', 'Authorization' => 'invalid' } }
+  let(:valid_token) { { 'uid' => user.email, 'token' => user.token } }
+  let(:invalid_token) { { 'uid' => 'invalid', 'token' => 'invalid' } }
 
   context '#call' do
-    context 'with valid token and uid' do
+    context 'with valid credentials' do
       it "should success" do
         expect(AuthorizeRequest.call(valid_token)).to be_success
       end

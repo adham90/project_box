@@ -3,7 +3,7 @@ class AuthorizeRequest
   attr_reader :token, :uid
 
   def initialize(headers = {})
-    @token = headers['Authorization']
+    @token = headers['token']
     @uid   = headers['uid']
   end
 

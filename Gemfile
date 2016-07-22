@@ -6,10 +6,12 @@ gem 'bson_ext'
 gem 'puma', '~> 3.0'
 gem 'rubocop', require: false
 gem 'rack-cors'
-gem 'active_model_serializers', '~> 0.10.0'
+gem "responders"
+gem 'roar'
+gem 'multi_json'
+gem "roar-rails"
 gem 'bcrypt', '~> 3.1'
 gem 'simple_command'
-gem 'active_model_secure_token'
 
 group :development, :test do
   gem 'byebug', platform: :mri
